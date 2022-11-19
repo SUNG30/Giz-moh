@@ -1,0 +1,118 @@
+body{
+    background-color: #F5F5F5;
+}
+.page-container{
+    display: grid;
+    grid-template-columns: auto 50% auto ;
+    grid-template-rows: 350px 300px 300px  ;
+    grid-gap:10px;
+    justify-items: center;
+}   
+.page-container > .content-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+}
+.content-img{
+
+    width: 171px;
+    height: 171px;
+    left: 632px;
+    top: 228px;
+    background-image: url(./moh.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    
+}
+.page-container > .content-text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 30px;
+}
+.content-text{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+.content-text > #welcome-text-kh{
+    margin-bottom: -1px;    
+}
+#welcome-text-kh{
+    font-family: 'Kantumruy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.content-text > #welcome-text-En{
+    padding-bottom: 10px;
+    margin-top:-5px;
+}
+
+#welcome-text-En{
+    
+    font-family: 'Kantumruy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+}
+.content-text > #login-button {
+    background: #375426;
+    border-radius: 6px;
+    width: 135px;
+    height: 30px;
+}
+#login-button{
+    font-family: 'Kantumruy';
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.content-text > #learnMore-button{
+
+    box-sizing: border-box;
+    width: 227px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px solid #375426;
+    border-radius: 6px;
+    margin-top:10px;
+}
+#learnMore-button {
+    font-family: 'Kantumruy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000;
+}
+.page-container > .footer{
+    align-self:end;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+}
+.footer{
+
+    
+    font-family: 'Kantumruy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+/*Responsive*/
+@media (max-width: 480px) {
+  
+    #welcome-text-Kh{
+        font-size: 10px;
+    }
+}
